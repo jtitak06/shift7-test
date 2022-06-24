@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.utility-bar {
+    height: 34px;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.US-flag {
+    margin: 5px 0px 7px 15px;
+}
+
+.icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.icon {
+    margin-right: 17px;
+}
+
+.icon:hover {
+    opacity: 0.85;
+}
+
+.shopping-cart {
+    background-color: #B81830;
+    width: 52.5px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.shopping-cart__icon {
+    margin: 0 6px 0 10.5px;
+}
+
+.items-number {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .desktop-header {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    height: 67px;
+    box-shadow: 0 2px 4px rgba(25, 25, 25, 0.2);
+}
+
+.nav-bar-wrapper {
+    display: flex;
+}
+
+.logo {
+    width: 116px;
+    margin-left: 14px;
+}
+
+.nav-tabs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 680px;
+    justify-content: space-evenly;
+}
+
+.nav-tabs__li {
+    display: flex;
+    height: 67px;
+    align-items: center;
+}
+
+#nav-border-solutions.active {
+    border-bottom: #B81830 3px solid;
+    margin-top: 3px;
+}
+
+#nav-border-products.active {
+    border-bottom: #B81830 3px solid;
+    margin-top: 3px;
+}
+
+#nav-border-automation.active {
+    border-bottom: #B81830 3px solid;
+    margin-top: 3px;
+}
+
+#nav-border-education.active {
+    border-bottom: #B81830 3px solid;
+    margin-top: 3px;
+}
+
+#nav-border-resources.active {
+    border-bottom: #B81830 3px solid;
+    margin-top: 3px;
+}
+
+.nav-text {
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    color: #000;
+    text-decoration: none;
+}
+
+#nav-text-solutions.active {
+    color: #B81830;
+}
+
+#nav-text-products.active {
+    color: #B81830;
+}
+
+#nav-text-automation.active {
+    color: #B81830;
+}
+
+#nav-text-education.active {
+    color: #B81830;
+}
+
+#nav-text-resources.active {
+    color: #B81830;
+}
+
+.dropdown-desktop {
+    height: 496px;
+    background: #ffffff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    display: none;
+}
+
+#desktop-solutions.active {
+    visibility: visible;
+    display: flex;
+}
+
+.solutions-list {
+    list-style: none;
+    margin-left: 45px;
+    visibility: hidden;
+    display: none;
+}
+
+.solutions-list.active {
+    visibility: visible;
+    display: unset;
+}
+
+#desktop-products.active {
+    visibility: visible;
+    display: flex;
+}
+
+.products-list {
+    list-style: none;
+    margin-left: 45px;
+    visibility: hidden;
+    display: none;
+}
+
+.products-list.active {
+    visibility: visible;
+    display: unset;
+}
+
+#desktop-automation.active {
+    visibility: visible;
+    display: flex;
+}
+
+#desktop-education.active {
+    visibility: visible;
+    display: flex;
+}
+
+#desktop-resources.active {
+    visibility: visible;
+    display: flex;
+}
+
+.dropdown-desktop__list-item:first-of-type {
+    margin-top: 36px;
+}
+
+.dropdown-desktop__list-item {
+    margin-top: 18px;
+}
+
+.dropdown-desktop__title {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #171717;
+}
+
+.search-wrapper {
+    display: flex;
+}
+
+.search-text {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 8px;
+}
+
+.search-button {
+    border: none;
+    background: transparent;
+    margin: 1px 26.5px 0 0;
+}
+
+
