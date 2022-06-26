@@ -502,7 +502,11 @@
     padding-right: 16px;
 }
 
-#go-back {
+#go-back-solutions {
+    justify-content: flex-start;
+}
+
+#go-back-products {
     justify-content: flex-start;
 }
 
@@ -556,6 +560,19 @@
 }
 
 #mobile-solutions.active {
+    visibility: visible;
+    display: unset;
+    position: fixed;
+    margin-top: -10px;
+    width: 100vw;
+}
+
+#mobile-products {
+    visibility: hidden;
+    display: none;
+}
+
+#mobile-products.active {
     visibility: visible;
     display: unset;
     position: fixed;

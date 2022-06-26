@@ -7,12 +7,17 @@ const navTextSolutions = document.getElementById('nav-text-solutions');
 /* Solutions - Mobile */
 const mobileSolutionsTab = document.getElementById('mobile-tab-solutions');
 const mobileSolutionsMenu = document.getElementById('mobile-solutions');
+const backButtonSolutions = document.getElementById('go-back-solutions');
 /* Products */
 const productsTab = document.getElementById('products');
 const productsList = document.querySelector('.products-list');
 const dropdownDesktopProducts = document.getElementById('desktop-products');
 const navBorderProducts = document.getElementById('nav-border-products');
 const navTextProducts = document.getElementById('nav-text-products');
+/* Products - Mobile */
+const mobileProductsTab = document.getElementById('mobile-tab-products');
+const mobileProductsMenu = document.getElementById('mobile-products');
+const backButtonProducts = document.getElementById('go-back-products');
 /* Automation */
 const automationTab = document.getElementById('automation');
 const dropdownDesktopAutomation = document.getElementById('desktop-automation');
@@ -38,8 +43,7 @@ const menuBottom = document.querySelector('.menu-bottom');
 const heroSection = document.querySelector('.hero-section');
 /* CLose Button */
 const closeButton = document.querySelector('.close-button');
-/* Go Back */
-const backButton = document.getElementById('go-back');
+
 
 solutionsTab.addEventListener("click", () => {
     /*Activate Solutions Tab*/
@@ -179,6 +183,7 @@ closeButton.addEventListener("click", () => {
     mobileMenu.classList.remove('active');
     heroSection.classList.remove('hide');
     mobileSolutionsMenu.classList.remove('active');
+    mobileProductsMenu.classList.remove('active');
 })
 
 /* Mobile Solutions Tab*/
@@ -188,10 +193,25 @@ mobileSolutionsTab.addEventListener("click", () => {
     mobileSolutionsMenu.classList.add('active');
 })
 
-/* Go Back Tab */
-backButton.addEventListener("click", () => {
+/* Go Back Tab - Solutions */
+backButtonSolutions.addEventListener("click", () => {
     mobileMenu.classList.add('active');
     mobileMain.classList.remove('hide');
     menuBottom.classList.remove('hide');
     mobileSolutionsMenu.classList.remove('active');
+})
+
+/* Mobile Products Tab */
+mobileProductsTab.addEventListener("click", () => {
+    mobileMain.classList.add('hide');
+    menuBottom.classList.add('hide');
+    mobileProductsMenu.classList.add('active');
+})
+
+/* Go Back Tab - Products */
+backButtonProducts.addEventListener("click", () => {
+    mobileMenu.classList.add('active');
+    mobileMain.classList.remove('hide');
+    menuBottom.classList.remove('hide');
+    mobileProductsMenu.classList.remove('active');
 })
