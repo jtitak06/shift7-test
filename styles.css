@@ -481,6 +481,11 @@
     cursor: pointer;
 }
 
+#mobile-main.hide {
+    visibility: hidden;
+    display: none;
+}
+
 .menu-tab {
     height: 50px;
     border-bottom: 1px solid #D0D0D0;
@@ -497,6 +502,10 @@
     padding-right: 16px;
 }
 
+#go-back {
+    justify-content: flex-start;
+}
+
 .menu-link__text {
     text-transform: uppercase;
     font-family: 'Noto Sans', sans-serif;
@@ -505,6 +514,15 @@
     line-height: 19px;
     color: #000000;
     text-decoration: none;
+}
+
+#go-back__text {
+    margin-left: 7px;
+}
+
+.menu-bottom.hide {
+    visibility: hidden;
+    display: none;
 }
 
 .menu-bottom-link {
@@ -531,3 +549,17 @@
     line-height: 22px;
     margin-left: 7px;
 }
+
+#mobile-solutions {
+    visibility: hidden;
+    display: none;
+}
+
+#mobile-solutions.active {
+    visibility: visible;
+    display: unset;
+    position: fixed;
+    margin-top: -10px;
+    width: 100vw;
+}
+

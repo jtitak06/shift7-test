@@ -4,6 +4,9 @@ const solutionsList = document.querySelector('.solutions-list');
 const dropdownDesktopSolutions = document.getElementById('desktop-solutions');
 const navBorderSolutions = document.getElementById('nav-border-solutions');
 const navTextSolutions = document.getElementById('nav-text-solutions');
+/* Solutions - Mobile */
+const mobileSolutionsTab = document.getElementById('mobile-tab-solutions');
+const mobileSolutionsMenu = document.getElementById('mobile-solutions');
 /* Products */
 const productsTab = document.getElementById('products');
 const productsList = document.querySelector('.products-list');
@@ -29,10 +32,14 @@ const navTextResources = document.getElementById('nav-text-resources');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 /* Mobile Menu */
 const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMain = document.getElementById('mobile-main');
+const menuBottom = document.querySelector('.menu-bottom');
 /* Hero Section */
 const heroSection = document.querySelector('.hero-section');
 /* CLose Button */
 const closeButton = document.querySelector('.close-button');
+/* Go Back */
+const backButton = document.getElementById('go-back');
 
 solutionsTab.addEventListener("click", () => {
     /*Activate Solutions Tab*/
@@ -163,10 +170,28 @@ resourcesTab.addEventListener("click", () => {
 hamburgerMenu.addEventListener("click", () => {
     mobileMenu.classList.add('active');
     heroSection.classList.add('hide');
+    mobileMain.classList.remove('hide');
+    menuBottom.classList.remove('hide');
 })
 
 /*Close Mobile Menu*/
 closeButton.addEventListener("click", () => {
     mobileMenu.classList.remove('active');
     heroSection.classList.remove('hide');
+    mobileSolutionsMenu.classList.remove('active');
+})
+
+/* Mobile Solutions Tab*/
+mobileSolutionsTab.addEventListener("click", () => {
+    mobileMain.classList.add('hide');
+    menuBottom.classList.add('hide');
+    mobileSolutionsMenu.classList.add('active');
+})
+
+/* Go Back Tab */
+backButton.addEventListener("click", () => {
+    mobileMenu.classList.add('active');
+    mobileMain.classList.remove('hide');
+    menuBottom.classList.remove('hide');
+    mobileSolutionsMenu.classList.remove('active');
 })
